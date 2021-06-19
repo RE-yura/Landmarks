@@ -12,12 +12,74 @@ struct LandmarkList: View {
         NavigationView {
             List {
                 NavigationLink(
-                    destination: ContentView(),
+                    destination: LandmarkDetail(
+                        landmark: Landmark(
+                            name: "Turtle Rock",
+                            category: "Rivers",
+                            city: "Twentynine Palms",
+                            state: "California",
+                            id: 1001,
+                            isFeatured: true,
+                            isFavorite: true,
+                            park: "Joshua Tree National Park",
+                            coordinates: Coordinates(
+                                longitude: -116.166868,
+                                latitude: 34.011286
+                            ),
+                            description: "",
+                            imageName: "turtlerock"
+                        )
+                    ),
                     label: {
-                        LandmarkRow()
+                        LandmarkRow(landmark: Landmark(
+                            name: "Turtle Rock",
+                            category: "Rivers",
+                            city: "Twentynine Palms",
+                            state: "California",
+                            id: 1001,
+                            isFeatured: true,
+                            isFavorite: true,
+                            park: "Joshua Tree National Park",
+                            coordinates: Coordinates(
+                                longitude: -116.166868,
+                                latitude: 35.011286
+                            ),
+                            description: "Sus primis ultrices nascetur erat varius integer.",
+                            imageName: "turtlerock"
+                        ))
                     })
-                LandmarkRow()
-                LandmarkRow()
+                LandmarkRow(landmark: Landmark(
+                    name: "Turtle Rock",
+                    category: "Rivers",
+                    city: "Twentynine Palms",
+                    state: "California",
+                    id: 1001,
+                    isFeatured: true,
+                    isFavorite: true,
+                    park: "Joshua Tree National Park",
+                    coordinates: Coordinates(
+                        longitude: -116.166868,
+                        latitude: 34.011286
+                    ),
+                    description: "Sus primis ultrices nascetur erat varius integer.",
+                    imageName: "turtlerock"
+                ))
+                LandmarkRow(landmark: Landmark(
+                    name: "Turtle Rock",
+                    category: "Rivers",
+                    city: "Twentynine Palms",
+                    state: "California",
+                    id: 1001,
+                    isFeatured: true,
+                    isFavorite: true,
+                    park: "Joshua Tree National Park",
+                    coordinates: Coordinates(
+                        longitude: -116.166868,
+                        latitude: 34.011286
+                    ),
+                    description: "Sus primis ultrices nascetur erat varius integer.",
+                    imageName: "turtlerock"
+                ))
             }
             .navigationTitle("Landmarks")
             .navigationBarTitleDisplayMode(.automatic)
