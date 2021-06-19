@@ -63,7 +63,7 @@ struct LandmarkRow_Previews: PreviewProvider {
                     imageName: "turtlerock"
                 )
             )
-            .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
+            .preferredColorScheme(.dark)
         }
         .previewLayout(.fixed(width: 375, height: 78))
     }
